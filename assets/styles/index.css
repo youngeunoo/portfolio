@@ -1,0 +1,516 @@
+@charset "utf-8";
+
+/* "Pretendard Variable" */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/* font-family: 'SCoreDream'; */
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+
+@import url(./animation.css);
+body {
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(225, 225, 225, 0.5),
+    (rgba(225, 225, 225, 0.5)),
+    url(./배경.jpg)
+  );
+  background-color: #fffcf1;
+  background-blend-mode: multiply;
+  color: #232323;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 7px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #232323;
+  border-radius: 2px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.scroll {
+  position: absolute;
+  z-index: 50;
+  bottom: 20px;
+}
+section {
+  height: 100vh;
+  min-height: 900px;
+  /* min-width: 900px; */
+}
+::selection {
+  background-color: #fff6a1;
+  color: rgb(255, 255, 255);
+}
+
+.mouse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px #232323 solid;
+  transform: translate(10%, 10%);
+  transition: 0.2s;
+  z-index: 9999;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+/* header */
+header {
+  position: absolute;
+  font-family: "SCoreDream";
+  font-size: 16px;
+}
+header menu {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+header a {
+  color: #232323;
+  fill: #232323;
+  text-decoration: none;
+}
+
+header li a img {
+  width: 20px;
+}
+
+/* main */
+.main {
+  position: relative;
+}
+
+.main h1 {
+  font-size: 75px;
+  font-weight: 300;
+  position: relative;
+  z-index: 555;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}
+
+.main .star {
+  width: 42px;
+  position: absolute;
+  top: 170px;
+  z-index: 50;
+  left: -20px;
+  animation: shine 3s linear infinite;
+}
+.main .flare {
+  width: 69px;
+  position: absolute;
+  top: 10px;
+  z-index: 50;
+  right: -20px;
+  animation: flare 1s alternate infinite;
+}
+.main .red {
+  position: absolute;
+  top: 20px;
+}
+.main .yellow {
+  position: absolute;
+  top: 250px;
+  transform: translateX(-550px);
+}
+.main .green {
+  position: absolute;
+  top: 430px;
+  transform: translateX(-100px);
+}
+
+/* intro */
+.intro {
+  width: 804px;
+  margin: auto;
+  font-size: 20px;
+  position: relative;
+}
+.intro .intro-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 500;
+}
+.intro .intro-container .intro-box {
+  border: 1px #232323 solid;
+  margin: auto;
+  line-height: 5;
+  padding: 50px;
+  font-weight: 300;
+  position: relative;
+  z-index: 100;
+}
+.intro .intro-container .intro-box strong {
+  position: relative;
+}
+.intro .intro-container .intro-box strong::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #232323;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.intro .intro-container .intro-box strong:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #232323;
+}
+.intro .intro-container .intro-box img {
+  width: 40px;
+}
+.intro .intro-container .intro-box p {
+  position: relative;
+}
+.intro .intro-container .intro-box .book {
+  top: 8px;
+  right: 134px;
+}
+.intro .intro-container .intro-box .note {
+  top: 12px;
+  left: 190px;
+}
+.intro .intro-container .intro-box .plant {
+  top: 10px;
+  right: 177px;
+}
+.intro .intro-container .intro-box .music_note {
+  top: 20px;
+  left: 184px;
+}
+.intro .intro-container h3 {
+  font-family: "SCoreDream";
+  font-weight: 300;
+  position: absolute;
+  z-index: 100;
+}
+.intro .intro-container h3:first-child {
+  top: -28px;
+}
+.intro .intro-container h3:nth-child(3) {
+  bottom: -28px;
+  right: 0;
+}
+.intro img {
+  position: absolute;
+}
+.intro .red {
+  width: 1300px;
+  top: 250px;
+  right: -400px;
+}
+.intro .yellow {
+  top: -120px;
+  left: -250px;
+  width: 800px;
+}
+.intro .green {
+  top: 300px;
+  left: -300px;
+  width: 650px;
+}
+.intro .blue {
+  top: 0;
+  right: -100px;
+  width: 550px;
+}
+
+/* skill */
+.skill {
+  padding: 100px 24%;
+  position: relative;
+}
+.skill h2 {
+  font-size: 40px;
+  margin: 0 auto 100px;
+  font-weight: 300;
+  position: relative;
+  width: 500px;
+}
+.skill h2 img {
+  position: absolute;
+  width: 30px;
+  top: -15px;
+  right: 10px;
+}
+.skill .skill-box {
+  width: 100%;
+  min-width: 800px;
+  height: auto;
+  position: relative;
+}
+.skill .list-box02 {
+  opacity: 1;
+  top: 0;
+  position: absolute;
+  transform: translateY(0);
+}
+
+.skill .list-box li {
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+}
+
+.skill .list-box li h3 {
+  width: 220px;
+  height: 200px;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+}
+.skill .list-box .skill1 h3 {
+  background: url(../images/redcircle.png) no-repeat center;
+}
+.skill .list-box .skill2 h3 {
+  background: url(../images/greencircle.png) no-repeat center;
+}
+.skill .list-box .skill3 h3 {
+  background: url(../images/yellowcircle.png) no-repeat center;
+}
+.skill .list-box .skill4 h3 {
+  background: url(../images/bluecircle.png) no-repeat center;
+}
+.skill .list-box li ul {
+  padding-left: 50px;
+  line-height: 1.5;
+  font-size: 17px;
+  font-family: "SCoreDream";
+  font-weight: 300;
+  position: relative;
+}
+.skill .list-box li:nth-of-type(odd) ul::after {
+  content: "";
+  background-color: #232323;
+  width: 657px;
+  height: 1px;
+  position: absolute;
+  top: 162px;
+  left: 30px;
+}
+.skill .list-box li ul li::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+/* project */
+.project {
+  padding: 100px;
+  position: relative;
+}
+.project h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 auto 150px;
+  position: relative;
+}
+.project h2 img {
+  width: 25px;
+  position: absolute;
+  transform: translateX(-20px);
+  top: -10px;
+}
+.project .project-box {
+  position: relative;
+  width: 600px;
+  height: 100%;
+  margin: auto;
+  transform: translateX(-100px);
+}
+.project .project-box h4 {
+  position: absolute;
+  font-family: "SCoreDream";
+  font-size: 30px;
+  font-weight: 300;
+  height: 30px;
+}
+.project .swiper-slide:nth-child(1) h4 {
+  border-bottom: 5px solid #96b6c598;
+}
+.project .swiper-slide:nth-child(2) h4 {
+  border-bottom: 5px solid #ffdcaa85;
+}
+.project .swiper-slide:nth-child(3) h4 {
+  border-bottom: 5px solid #ffb7b791;
+}
+.project .swiper-slide:nth-child(4) h4 {
+  border-bottom: 5px solid #96c29185;
+}
+.project .project-box .tag {
+  position: absolute;
+  font-family: "SCoreDream";
+  font-weight: 300;
+  text-align: left;
+  top: 110px;
+  font-size: 16px;
+}
+.project .swiper-slide {
+  position: relative;
+  height: 300px;
+}
+.project .swiper-slide img {
+  width: 309px;
+  height: 247px;
+  object-fit: cover;
+  border-radius: 1px;
+  border: 1px #232323 solid;
+}
+.project .swiper-slide img:nth-child(even) {
+  position: absolute;
+  z-index: 50;
+  top: 50px;
+  right: 300px;
+}
+.project .swiper-slide img:nth-child(odd) {
+  position: absolute;
+  top: 0;
+}
+
+/* outro */
+.outro {
+  position: relative;
+}
+.outro h2 {
+  font-size: 64px;
+  font-weight: 600;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  z-index: 100;
+}
+.outro h2 img {
+  width: 75px;
+}
+.outro .link-box {
+  position: absolute;
+  bottom: 120px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 900px;
+}
+.outro .link-box .msg-box {
+  display: flex;
+}
+.outro .link-box .rotating-text-wrapper {
+  margin: -29px 7px 0;
+}
+/* 애니메이션 부분 */
+.outro .link-box .rotating-text-wrapper p {
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.outro .link-box .rotating-text-wrapper p:nth-child(1) {
+  animation-name: rotate1;
+}
+.outro .link-box .rotating-text-wrapper p:nth-child(2) {
+  animation-name: rotate2;
+}
+.outro .link-box .rotating-text-wrapper p:nth-child(3) {
+  animation-name: rotate3;
+}
+
+.outro .link-box img {
+  width: 50px;
+  margin: -27px 15px 0;
+}
+.outro .link-box a::before {
+  content: url(../images/317712_code\ repository_github_repository_resource_icon.svg);
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+.outro .link-box a {
+  color: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 35px;
+  margin-top: -27px;
+}
+.outro .link_box a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #232323;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  transition: 0.3s;
+}
+.outro .link-box a:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #232323;
+}
+.outro .color {
+  position: absolute;
+}
+.outro .red {
+  width: 550px;
+  top: 60px;
+  transform: translateX(-470px);
+}
+.outro .yellow {
+  width: 300px;
+  top: 280px;
+  transform: translateX(-170px);
+}
+.outro .blue {
+  width: 450px;
+  top: 130px;
+  transform: translateX(-70px);
+}
+
+/* footer */
+footer {
+  border-top: 1px #232323 solid;
+  position: relative;
+}
+footer p {
+  text-align: left;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: #232323 1px solid;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.up-btn:hover {
+  border-radius: 50%;
+}

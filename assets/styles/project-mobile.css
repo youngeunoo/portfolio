@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.intro {
+  min-width: inherit;
+  margin: 0 0 100px;
+}
+.intro .title {
+  display: flex;
+}
+.intro .title p {
+  font-size: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 210px;
+}
+.intro .title .project1-title {
+  min-width: 245px;
+}
+.intro .title img {
+  width: 400px;
+  height: 230px;
+  margin: auto;
+}
+.intro .info {
+  width: 90%;
+  font-size: 1.1rem;
+  word-break: keep-all;
+  line-height: 1.8;
+}
+.intro .red {
+  width: 400px;
+  right: -180px;
+  top: 40px;
+}
+.intro .yellow {
+  left: -100px;
+  width: 350px;
+  top: 200px;
+}
+.intro .green {
+  width: 330px;
+  top: 280px;
+  left: inherit;
+  right: 0px;
+}
+
+/* content */
+article {
+  padding: 0 50px 200px;
+}
+article div {
+  line-height: 1.8;
+}
+article h3 {
+  font-size: 1.5rem;
+  height: 32px;
+}
+article ul {
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 50px auto;
+  font-size: 1.2rem;
+}
+
+.design ul {
+  flex-direction: column;
+}
+.design ul li {
+  margin: 20px;
+}
+.design ul li .keyword li {
+  width: 80px;
+}

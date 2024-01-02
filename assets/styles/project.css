@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/* "Pretendard Variable" */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/* font-family: 'SCoreDream'; */
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
+
+@import url(./animation.css);
+
+body {
+  background-image: linear-gradient(
+    rgba(225, 225, 225, 0.5),
+    (rgba(225, 225, 225, 0.5)),
+    url(./assets/images/배경.jpg)
+  );
+  background-color: #fffcf1;
+  background-blend-mode: multiply;
+  color: #232323;
+  font-family: "SCoreDream";
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 7px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #232323;
+  border-radius: 2px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.scroll {
+  position: absolute;
+  z-index: 50;
+  bottom: 20px;
+}
+::selection {
+  background-color: #fff6a1;
+  color: rgb(255, 255, 255);
+}
+.mouse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px #232323 solid;
+  transform: translate(10%, 10%);
+  transition: 0.2s;
+  z-index: 9999;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+/* header */
+header {
+  position: absolute;
+  font-family: "SCoreDream";
+  font-size: 16px;
+}
+header menu {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+header a {
+  color: #232323;
+  fill: #232323;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header li a img {
+  width: 20px;
+}
+header a:hover {
+  color: #fff;
+  background-color: #232323;
+}
+
+.intro {
+  padding: 200px 0;
+  display: grid;
+  place-content: center;
+  margin: 0 0 200px;
+  min-width: 900px;
+}
+.intro .title {
+  position: relative;
+  margin: auto;
+  z-index: 500;
+}
+.intro .title p {
+  position: absolute;
+  background-color: #96b6c5;
+  padding: 3px 7px;
+  border-radius: 1px;
+  border: 1px #232323 solid;
+  font-size: 30px;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.intro .title img {
+  width: 760px;
+  height: 304px;
+  object-fit: cover;
+  border-radius: 1px;
+  border: 1px #232323 solid;
+}
+.intro .info {
+  text-align: center;
+  margin: 100px auto 0;
+  width: 630px;
+  position: relative;
+  z-index: 500;
+  word-break: keep-all;
+}
+.intro .info strong {
+  position: relative;
+}
+.intro .info strong::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #232323;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  transition: 0.3s;
+}
+.intro .info strong:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #232323;
+}
+.intro .scroll {
+  position: absolute;
+  top: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.intro .red {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.intro .yellow {
+  position: absolute;
+}
+.intro .green {
+  position: absolute;
+  top: 400px;
+  left: 300px;
+}
+
+/* content */
+article {
+  display: grid;
+  place-content: center;
+  margin: 50px 0;
+  padding-bottom: 200px;
+}
+article div {
+  margin: 60px 0;
+}
+article h3 {
+  font-size: 22px;
+  border-bottom: #96b6c58a solid 5px;
+  height: 27px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+article .process-title li {
+  line-height: 1.7;
+}
+article .process-title li .process-content {
+  margin-bottom: 20px;
+}
+article ul li {
+  line-height: 1.6;
+}
+article ul li::before {
+  content: "•";
+}
+article .process-title .process-content li::before {
+  content: "-";
+  margin-right: 5px;
+}
+button {
+  font-size: 24px;
+  background-color: #96b6c5;
+  border: #232323 1px solid;
+  border-radius: 1px;
+  margin: 50px;
+  font-family: "SCoreDream";
+  padding: 15px;
+  position: absolute;
+  transform: translate(-50%, -250px);
+  left: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+button p {
+  display: inline;
+}
+
+button:hover {
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.design ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design ul li span {
+  margin-bottom: 50px;
+}
+.design ul li ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard Variable";
+  font-size: 14px;
+  margin-top: 10px;
+}
+.design ul li ul li {
+  margin: 5px;
+}
+.design ul li .keyword li {
+  border: 1px #232323 solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 2px 8px;
+}
+.design ul li ul li::before {
+  content: "";
+}
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: #232323 1px solid;
+  border-radius: 1px;
+  transition: 0.3s;
+}
+.up-btn:hover {
+  border-radius: 50%;
+}
