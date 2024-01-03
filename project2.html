@@ -1,152 +1,282 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- og -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/styles/project.css" />
+    <!-- mobile -->
+    <link
+      rel="stylesheet"
+      media="(width <= 600px)"
+      href="./assets/styles/project-mobile.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js -->
+    <script defer src="./project.js"></script>
+    <title>싱싱고</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- reset -->
-  <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
-  <!-- style -->
-  <link rel="stylesheet" href="./assets/styles/project.css" />
-  <!-- mobile -->
-  <link rel="stylesheet" media="(width <= 600px)" href="./assets/styles/project-mobile.css" />
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- js -->
-  <script defer src="./project.js"></script>
-  <title>싱싱고</title>
-</head>
+  <body>
+    <header>
+      <menu>
+        <li><a href="./index.html">뒤로가기</a></li>
+      </menu>
+    </header>
+    <article class="intro">
+      <div class="title">
+        <img src="./assets/images/싱싱고화면.png" alt="싱싱고 대표 이미지" />
+        <p>싱싱고</p>
+      </div>
+      <p class="info">
+        팀을 구성하여 애플리케이션의 기획부터 디자인, 구현까지 함으로써
+        <strong>원활한 의사소통 능력</strong>과 <strong>리액트 기술</strong>을
+        증진시킨다.
+      </p>
+      <img src="./assets/images/red.png" alt="color" class="red" />
+      <img src="./assets/images/yellow.png" alt="color" class="yellow" />
+      <img src="./assets/images/green.png" alt="color" class="green" />
+      <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+    </article>
+    <article class="content">
+      <div class="overview" data-aos="fade-up">
+        <h3>프로젝트 개요</h3>
+        <ul>
+          <li>작업기간 : 23. 12. 01 - 23. 12. 22</li>
+          <li>기여도 : 30%</li>
+        </ul>
+      </div>
+      <div class="goal" data-aos="fade-up">
+        <h3>목표</h3>
+        <ul>
+          <li>
+            애플리케이션 구현에 필요한 <strong>리액트 기술을 학습</strong>하고
+            활용하며 실력을 증진시킬 수 있도록 함
+          </li>
+          <li>
+            정해진 기간 안에
+            <strong>완성도 있는 애플리케이션을 구현</strong>하여 완성의 경험과
+            자신감을 기름
+          </li>
+          <li>
+            팀원들 간의 <strong>원활하고 적극적인 의사소통</strong>을 통해
+            프로젝트를 더 나은 방향으로 나아갈 수 있게 함
+          </li>
+        </ul>
+      </div>
+      <div class="process" data-aos="fade-up">
+        <h3>작업 순서</h3>
+        <ul class="process-title">
+          <li>
+            <span>사전 기획</span>
+            <ul class="process-content">
+              <li>개발할 애플리케이션의 기능 선정</li>
+              <li>사용자 시나리오 작성</li>
+              <li>유스케이스&워크플로우 작성</li>
+              <li>디렉토리 구조 작성</li>
+              <li>코딩 및 디자인 가이드 작성</li>
+            </ul>
+          </li>
+          <li>
+            <span>개발 작업</span>
+            <ul class="process-content">
+              <li>디렉토리 설정</li>
+              <li>페이지 레이아웃 작업</li>
+              <li>각 페이지에 필요한 기능 구현</li>
+            </ul>
+          </li>
+          <li>
+            <span>디자인 작업</span>
+            <ul class="process-content">
+              <li>UI 프로토타입 작업</li>
+              <li>메인 색상과 포인트 색상, 사용될 폰트 선정</li>
+              <li>애플리케이션에 삽입될 일러스트, 아이콘 작업</li>
+              <li>전체적인 분위기를 통합하여 UI 디자인 완성 후 스타일 작업</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="skill" data-aos="fade-up">
+        <h3>사용 기술</h3>
+        <ul>
+          <li>React</li>
+          <li>CSS3</li>
+          <li>Notion</li>
+          <li>GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+      <div class="design" data-aos="fade-up">
+        <h3>디자인 가이드</h3>
+        <ul>
+          <li>
+            <span>키워드</span>
+            <ul class="keyword">
+              <li>#신선함</li>
+              <li>#편안함</li>
+              <li>#편리함</li>
+            </ul>
+          </li>
+          <li>
+            <span>색상</span>
+            <ul>
+              <li>
+                <p>메인 색상</p>
+                <img
+                  src="./assets/images/singsingo-color01.png"
+                  alt="싱싱고 메인컬러"
+                />
+              </li>
+              <li>
+                <p>포인트 색상</p>
+                <img
+                  src="./assets/images/singsingo-color02.png"
+                  alt="싱싱고 포인트컬러"
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>폰트</span>
+            <ul>
+              <li>
+                <img src="./assets/images/싱싱고폰트.png" alt="싱싱고폰트" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="problem" data-aos="fade-up">
+        <h3>문제 및 해결</h3>
+        <ul>
+          <li>
+            식재료 목록에서 새로고침을 하면 등록한 요소들이 사라지는 문제가
+            있었다.
+            <p>
+              → localStorage를 이용하여 브라우저에 데이터를 저장 후 불러오는
+              방식으로 유지하였다.
+            </p>
+          </li>
+          <li>
+            이벤트를 적용하는 달력의 구현을 어떤 식으로 진행해야 할지 갈피를
+            잡지 못하였다.
+            <p>
+              → fullcalendar 라이브러리를 발견한 후 달력 기능과 날짜별로
+              이벤트를 띄우는 기능을 활용하여 원하는 기능을 구현하였다.
+            </p>
+          </li>
+          <li>
+            식료품 선택 후 삭제 버튼을 누를 때 랜덤의 식료품이 삭제되는 문제가
+            있었다.
+            <p>
+              → uuid를 이용하여 식료품마다 고유의 id값을 가지게 한 후 해당
+              식료품의 id를 찾아 삭제할 수 있도록 삭제 함수를 수정하였다.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="review" data-aos="fade-up">
+        <h3>후기</h3>
+        <ul class="review-title">
+          <li>
+            <span>아쉬운 부분</span>
+            <ul>
+              <li>
+                완벽한 구현 실패: 처음에 기획했던 모든 기능을 구현하지 못함
+              </li>
+              <li>
+                mongoDB 미적용: mongoDB를 배운 후 발표까지의 시간이 짧아 데이터
+                관리에 mongoDB를 직접 사용해보지 못함
+              </li>
+              <li>
+                발표 목적 파악 미흡: 발표의 목적을 잘 파악하지 못해 개발 작업에
+                대한 설명이 부족하였음
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>잘한 부분</span>
+            <ul>
+              <li>
+                원활한 의사소통: 팀원 간의 의사소통이 원활히 잘 이루어져
+                피드백과 수정이 금방 이루어짐
+              </li>
+              <li>
+                적절한 역할 분배: 역할 분배가 잘 이루어져 각자의 작업에 더욱
+                집중할 수 있었음
+              </li>
+              <li>
+                낯선 기술 습득: 어렵고 막막했던 기술들을 팀원들 모두 도전해 보고
+                결과물을 만들어냄
+              </li>
+              <li>
+                적극적인 참여: 팀원들 모두가 프로젝트에 적극적으로 참여하고
+                작업을 구상해냄
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>배운 점 및 주관적인 의견</span>
+            <ul>
+              <li>
+                기획부터 디자인, 구현까지 모두 해보는 경험 자체가 즐거웠고
+                만족할만한 결과물을 만들어내어 자신감을 얻게 되었다.
+              </li>
+              <li>
+                달력 기능을 구현하며 다양한 라이브러리 및 플러그인을 찾아보게
+                되었고, 기능에 따른 캘린더 관련 라이브러리에 대해 많이 알게
+                되었다.
+              </li>
+              <li>
+                localStorage에 대한 개념을 제대로 알게 되었고 곧바로 활용까지
+                하여 잘 이해할 수 있었다.
+              </li>
+              <li>
+                만족스러운 결과물을 얻게 된 데에는 원활한 의사소통의 역할이 가장
+                컸다고 생각한다. 이번 프로젝트를 계기로 또 다시 의사소통의
+                중요성을 깨닫게 되었다.
+              </li>
+              <li>
+                처음 계획할 때 주어진 시간과 각자의 능력을 고려하여 계획을
+                했으면 더 효율적으로 시간을 사용할 수 있었을 것 같다는 아쉬움이
+                남는다.
+              </li>
+              <li>
+                전반적으로 만족스러운 프로젝트였다. 성공 경험을 통해 자신감과
+                흥미를 얻을 수 있었고 더욱 많은 기술을 알아가고 싶다는 생각을
+                하게 된 프로젝트였다.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <div class="btn-box">
+      <button>
+        <a href="./싱싱고PPT.pdf" target="_blank">
+          <p>발표자료 보러가기‣</p>
+        </a>
+      </button>
+      <button>
+        <a href="https://singsinggo.github.io/singsingo" target="_blank">
+          <p>완성된 프로젝트 보러가기‣</p>
+        </a>
+      </button>
+    </div>
 
-<body>
-  <div class="mouse"></div>
-  <header>
-    <menu>
-      <li><a href="./index.html">성영은</a></li>
-    </menu>
-  </header>
-  <article class="intro">
-    <div class="title">
-      <img src="./assets/images/싱싱고화면.png" alt="싱싱고 대표 이미지" />
-      <p>싱싱고</p>
-    </div>
-    <p class="info">
-      팀을 구성하여 애플리케이션의 기획부터 디자인, 구현까지 함으로써
-      <strong>원활한 의사소통 능력</strong>과 <strong>리액트 기술</strong>을
-      증진시킨다.
-    </p>
-    <img src="./assets/images/red.png" alt="color" class="red" />
-    <img src="./assets/images/yellow.png" alt="color" class="yellow" />
-    <img src="./assets/images/green.png" alt="color" class="green" />
-    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
-  </article>
-  <article class="content">
-    <div class="goal" data-aos="fade-up">
-      <h3>목표</h3>
-      <ul>
-        <li>
-          애플리케이션 구현에 필요한 <strong>리액트 기술을 학습</strong>하고
-          활용하며 실력을 증진시킬 수 있도록 함
-        </li>
-        <li>
-          정해진 기간 안에
-          <strong>완성도 있는 애플리케이션을 구현</strong>하여 완성의 경험과
-          자신감을 기름
-        </li>
-        <li>
-          팀원들 간의 <strong>원활하고 적극적인 의사소통</strong>을 통해
-          프로젝트를 더 나은 방향으로 나아갈 수 있게 함
-        </li>
-      </ul>
-    </div>
-    <div class="process" data-aos="fade-up">
-      <h3>작업 순서</h3>
-      <ul class="process-title">
-        <li>
-          사전 기획
-          <ul class="process-content">
-            <li>개발할 애플리케이션의 기능 선정</li>
-            <li>사용자 시나리오 작성</li>
-            <li>유스케이스&워크플로우 작성</li>
-            <li>디렉토리 구조 작성</li>
-            <li>코딩 및 디자인 가이드 작성</li>
-          </ul>
-        </li>
-        <li>
-          개발 작업
-          <ul class="process-content">
-            <li>디렉토리 설정</li>
-            <li>페이지 레이아웃 작업</li>
-            <li>각 페이지에 필요한 기능 구현</li>
-          </ul>
-        </li>
-        <li>
-          디자인 작업
-          <ul class="process-content">
-            <li>UI 프로토타입 작업</li>
-            <li>메인 색상과 포인트 색상, 사용될 폰트 선정</li>
-            <li>애플리케이션에 삽입될 일러스트, 아이콘 작업</li>
-            <li>전체적인 분위기를 통합하여 UI 디자인 완성 후 스타일 작업</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="skill" data-aos="fade-up">
-      <h3>사용 기술</h3>
-      <ul>
-        <li>React</li>
-        <li>CSS3</li>
-        <li>Notion</li>
-        <li>GitHub</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-    <div class="design" data-aos="fade-up">
-      <h3>디자인 가이드</h3>
-      <ul>
-        <li>
-          <span>키워드</span>
-          <ul class="keyword">
-            <li>#신선함</li>
-            <li>#편안함</li>
-            <li>#편리함</li>
-          </ul>
-        </li>
-        <li>
-          <span>색상</span>
-          <ul>
-            <li>
-              <p>메인 색상</p>
-              <img src="./assets/images/singsingo-color01.png" alt="싱싱고 메인컬러" />
-            </li>
-            <li>
-              <p>포인트 색상</p>
-              <img src="./assets/images/singsingo-color02.png" alt="싱싱고 포인트컬러" />
-            </li>
-          </ul>
-        </li>
-        <li>
-          <span>폰트</span>
-          <ul>
-            <li>Pretendard Variable</li>
-            <li>소요단풍체</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="publishing" data-aos="fade-up">
-      <h3>퍼블리싱 가이드</h3>
-      <ul>
-        <li>뭘 써야할지 모르겟는디</li>
-      </ul>
-    </div>
-  </article>
-  <button>
-    <a href="https://singsinggo.github.io/singsingo" target="_blank">
-      <p>홈페이지 보러가기‣</p>
-    </a>
-  </button>
-  <a href="#"> <img src="./assets/images/up.svg" alt="up" class="up-btn" /></a>
-</body>
-
+    <a href="#">
+      <img src="./assets/images/up.svg" alt="up" class="up-btn"
+    /></a>
+  </body>
 </html>

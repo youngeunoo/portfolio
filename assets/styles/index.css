@@ -43,21 +43,8 @@ section {
   /* min-width: 900px; */
 }
 ::selection {
-  background-color: #fff6a1;
-  color: rgb(255, 255, 255);
-}
-
-.mouse {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px #232323 solid;
-  transform: translate(10%, 10%);
-  transition: 0.2s;
-  z-index: 9999;
+  background-color: #999999;
+  color: #fff;
 }
 a {
   color: inherit;
@@ -67,40 +54,19 @@ a:visited {
   color: inherit;
 }
 
-/* header */
-header {
-  position: absolute;
-  font-family: "SCoreDream";
-  font-size: 16px;
-}
-header menu {
-  list-style: none;
-  display: flex;
-  gap: 5px;
-}
-header a {
-  color: #232323;
-  fill: #232323;
-  text-decoration: none;
-}
-
-header li a img {
-  width: 20px;
-}
-
 /* main */
 .main {
   position: relative;
 }
 
 .main h1 {
-  font-size: 75px;
+  font-size: 85px;
   font-weight: 300;
   position: relative;
   z-index: 555;
   top: 50%;
   transform: translateY(-50%);
-  width: 500px;
+  width: 550px;
   height: 300px;
   margin: auto;
 }
@@ -108,7 +74,7 @@ header li a img {
 .main .star {
   width: 42px;
   position: absolute;
-  top: 170px;
+  top: 200px;
   z-index: 50;
   left: -20px;
   animation: shine 3s linear infinite;
@@ -116,7 +82,7 @@ header li a img {
 .main .flare {
   width: 69px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   z-index: 50;
   right: -20px;
   animation: flare 1s alternate infinite;
@@ -140,7 +106,7 @@ header li a img {
 .intro {
   width: 804px;
   margin: auto;
-  font-size: 20px;
+  font-size: 24px;
   position: relative;
 }
 .intro .intro-container {
@@ -167,7 +133,7 @@ header li a img {
   height: 2px;
   background-color: #232323;
   position: absolute;
-  top: 22px;
+  top: 27px;
   left: 0;
   transition: 0.3s;
 }
@@ -185,20 +151,24 @@ header li a img {
   position: relative;
 }
 .intro .intro-container .intro-box .book {
-  top: 8px;
-  right: 134px;
+  top: 13px;
+  right: 105px;
+  animation: book 2s ease-in-out infinite;
 }
 .intro .intro-container .intro-box .note {
-  top: 12px;
-  left: 190px;
+  top: 20px;
+  left: 170px;
+  animation: note 1.5s ease-in-out infinite;
 }
 .intro .intro-container .intro-box .plant {
-  top: 10px;
-  right: 177px;
+  top: 20px;
+  right: 150px;
+  animation: plant 3s ease-in-out infinite;
 }
 .intro .intro-container .intro-box .music_note {
-  top: 20px;
-  left: 184px;
+  top: 30px;
+  left: 155px;
+  animation: music-note 1s ease-in-out infinite;
 }
 .intro .intro-container h3 {
   font-family: "SCoreDream";
@@ -207,10 +177,10 @@ header li a img {
   z-index: 100;
 }
 .intro .intro-container h3:first-child {
-  top: -28px;
+  top: -30px;
 }
 .intro .intro-container h3:nth-child(3) {
-  bottom: -28px;
+  bottom: -32px;
   right: 0;
 }
 .intro img {
@@ -243,17 +213,20 @@ header li a img {
   position: relative;
 }
 .skill h2 {
-  font-size: 40px;
+  font-size: 45px;
   margin: 0 auto 100px;
   font-weight: 300;
   position: relative;
-  width: 500px;
+  width: 530px;
+}
+.skill h2 strong {
+  border-bottom: #232323 2px solid;
 }
 .skill h2 img {
   position: absolute;
   width: 30px;
   top: -15px;
-  right: 10px;
+  right: 4px;
 }
 .skill .skill-box {
   width: 100%;
@@ -272,12 +245,13 @@ header li a img {
   display: flex;
   align-items: center;
   flex: 0 0 100%;
+  line-height: 1.5;
 }
 
 .skill .list-box li h3 {
   width: 220px;
   height: 200px;
-  font-size: 18px;
+  font-size: 22px;
   display: grid;
   place-items: center;
 }
@@ -296,9 +270,9 @@ header li a img {
 .skill .list-box li ul {
   padding-left: 50px;
   line-height: 1.5;
-  font-size: 17px;
+  font-size: 18px;
   font-family: "SCoreDream";
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
 }
 .skill .list-box li:nth-of-type(odd) ul::after {
@@ -321,10 +295,13 @@ header li a img {
   position: relative;
 }
 .project h2 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 300;
-  margin: 0 auto 150px;
+  margin: 0 auto 80px;
   position: relative;
+}
+.project h2 strong {
+  border-bottom: #232323 2px solid;
 }
 .project h2 img {
   width: 25px;
@@ -334,58 +311,127 @@ header li a img {
 }
 .project .project-box {
   position: relative;
-  width: 600px;
   height: 100%;
   margin: auto;
-  transform: translateX(-100px);
+  z-index: 800;
 }
 .project .project-box h4 {
   position: absolute;
   font-family: "SCoreDream";
-  font-size: 30px;
-  font-weight: 300;
-  height: 30px;
+  font-size: 34px;
+  font-weight: 400;
+  top: 420px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 15px;
 }
+.project .swiper-slide {
+  position: relative;
+  height: 600px;
+  /* min-width: 800px; */
+}
+.project .swiper-slide img {
+  width: 740px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 1px;
+  border: 1px #232323 solid;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  transition: 0.3s;
+}
+.project .swiper-slide:hover img {
+  filter: brightness(30%);
+}
+.project .swiper-slide .view {
+  position: absolute;
+  top: 175px;
+  z-index: 800;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  width: 100px;
+  height: 100px;
+  line-height: 200px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.project .swiper-slide .view img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  filter: brightness(100%);
+}
+.project .swiper-slide:hover .view {
+  opacity: 1;
+}
+
 .project .swiper-slide:nth-child(1) h4 {
-  border-bottom: 5px solid #96b6c598;
+  background-color: #96b6c5;
+  border: 1px solid #232323;
+  border-radius: 2px;
 }
 .project .swiper-slide:nth-child(2) h4 {
-  border-bottom: 5px solid #ffdcaa85;
+  background-color: #ffdbaa;
+  border: 1px solid #232323;
+  border-radius: 2px;
 }
 .project .swiper-slide:nth-child(3) h4 {
-  border-bottom: 5px solid #ffb7b791;
+  background-color: #ffb7b7;
+  border: 1px solid #232323;
+  border-radius: 2px;
 }
 .project .swiper-slide:nth-child(4) h4 {
-  border-bottom: 5px solid #96c29185;
+  background-color: #96c291;
+  border: 1px solid #232323;
+  border-radius: 2px;
 }
 .project .project-box .tag {
   position: absolute;
   font-family: "SCoreDream";
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
-  top: 110px;
-  font-size: 16px;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
 }
-.project .swiper-slide {
-  position: relative;
-  height: 300px;
-}
-.project .swiper-slide img {
-  width: 309px;
-  height: 247px;
-  object-fit: cover;
-  border-radius: 1px;
+.project .project-box .tag p {
   border: 1px #232323 solid;
+  border-radius: 20px;
+  padding: 5px 8px;
+  transition: 0.3s;
 }
-.project .swiper-slide img:nth-child(even) {
-  position: absolute;
-  z-index: 50;
-  top: 50px;
+.project .project-box .tag p:hover {
+  background-color: #232323;
+  color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #232323;
+  top: 250px;
+  width: 70px;
+  height: 60px;
+  transition: 0.3s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #999999;
+}
+.swiper-button-next {
   right: 300px;
 }
-.project .swiper-slide img:nth-child(odd) {
-  position: absolute;
-  top: 0;
+.swiper-button-prev {
+  left: 300px;
 }
 
 /* outro */
@@ -393,7 +439,7 @@ header li a img {
   position: relative;
 }
 .outro h2 {
-  font-size: 64px;
+  font-size: 80px;
   font-weight: 600;
   position: absolute;
   top: 40%;
@@ -447,6 +493,7 @@ header li a img {
   position: absolute;
   left: 0;
   top: -5px;
+  transition: 0.3s;
 }
 .outro .link-box a {
   color: inherit;
@@ -455,8 +502,15 @@ header li a img {
   position: relative;
   padding-left: 35px;
   margin-top: -27px;
+  transition: 0.3s;
 }
-.outro .link_box a::after {
+.outro .link-box a:hover {
+  color: #999999;
+}
+.outro .link-box a:hover::before {
+  filter: contrast(0%);
+}
+/* .outro .link-box a::after {
   content: "";
   width: 0px;
   height: 2px;
@@ -470,8 +524,8 @@ header li a img {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #232323;
-}
+  background-color: #999999;
+} */
 .outro .color {
   position: absolute;
 }
