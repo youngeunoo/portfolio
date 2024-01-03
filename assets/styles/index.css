@@ -435,10 +435,11 @@ a:visited {
 .swiper-button-next,
 .swiper-button-prev {
   color: #232323;
-  top: 420px;
-  width: 70px;
-  height: 60px;
+  top: 410px;
+  width: 100px;
+  height: 80px;
   transition: 0.3s;
+  padding: 20px;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {

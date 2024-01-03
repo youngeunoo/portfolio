@@ -1,235 +1,292 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>신입 웹퍼블리셔 성영은입니다</title>
-  <!-- reset -->
-  <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <!-- og -->
-  <meta property="og:title" content="성영은의 포트폴리오입니다.">
-  <meta property="og:url" content="https://youngeunoo.github.io/portfolio/">
-  <meta property="og:image" content="https://youngeunoo.github.io/portfolio/images/미리보기.png">
-  <meta property="og:title" content="성영은의 포트폴리오">
-  <meta property="og:description" content="즐거움을 추구하는 성영은의 포트폴리오입니다!">
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
-  <!-- style -->
-  <link rel="stylesheet" href="./assets/styles/index.css" />
-  <!-- moblie -->
-  <link rel="stylesheet" media="(width <= 600px)" href="./assets/styles/index-mobile.css" />
-  <!-- GSAP CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-  <!-- ScrollTrigger CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-  <!-- typeit -->
-  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-  <!-- js -->
-  <script defer src="./index.js"></script>
-</head>
-
-<body>
-  <!-- main -->
-  <section class="main" id="main">
-    <h1>
-      <img src="./assets/images/9310152_star_sparkle_icon.svg" alt="꾸밈" class="star" />
-      안녕하세요.<br />신입 웹퍼블리셔<br /><span class="text-box" id="textBox"></span>
-      <img src="./assets/images/flare_FILL1_wght200_GRAD0_opsz20.svg" alt="꾸밈" class="flare" />
-    </h1>
-    <img src="./assets/images/red.png" alt="color" class="red" />
-    <img src="./assets/images/yellow.png" alt="color" class="yellow" />
-    <img src="./assets/images/green.png" alt="color" class="green" />
-    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
-  </section>
-  <section class="intro" id="intro">
-    <div class="intro-container">
-      <h3>저는</h3>
-      <div class="intro-box">
-        <p>
-          경험을 통해 <strong>다양한 배움</strong>을 얻는 것을 좋아합니다.<img src="./assets/images/책.svg" alt="책" class="book" />
-        </p>
-        <p>
-          <img src="./assets/images/책임감.svg" alt="책임감" class="note" /><strong>책임감</strong>을 무엇보다 중요시합니다.
-        </p>
-        <p>
-          트렌드에 민감하고 <strong>습득력</strong>이 좋습니다.<img src="./assets/images/새싹.svg" alt="새싹" class="plant" />
-        </p>
-        <p>
-          <img src="./assets/images/음표.svg" alt="음표" class="music_note" /><strong>즐거움</strong>을 추구하고 만들어 나갑니다.
-        </p>
-      </div>
-      <h3>이런 사람입니다.</h3>
-    </div>
-
-    <img src="./assets/images/red.png" alt="color" class="red" />
-    <img src="./assets/images/yellow.png" alt="color" class="yellow" />
-    <img src="./assets/images/green.png" alt="color" class="green" />
-    <img src="./assets/images/blue.png" alt="color" class="blue" />
-    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
-  </section>
-  <section class="skill" id="skill">
-    <h2>
-      제가 가진 <strong>기술</strong>을 소개합니다.
-      <img src="./assets/images/build_FILL0_wght200_GRAD0_opsz20.svg" alt="기술" />
-    </h2>
-    <div class="skill-box">
-      <ul class="list-box list-box01">
-        <li class="skill1">
-          <h3>HTML5<br />/ CSS3</h3>
-          <ul>
-            <li>웹 접근성과 웹 표준을 고려한 시맨틱 마크업</li>
-            <li>미디어쿼리를 이용한 반응형 웹 제작</li>
-            <li>flex, grid, position을 사용한 레이아웃 구현</li>
-            <li>애니메이션 구현</li>
-            <li>CSS를 활용한 다양한 스타일 구현</li>
-          </ul>
-        </li>
-        <li class="skill2">
-          <h3>Java Script</h3>
-          <ul>
-            <li>ES6+ 문법 사용</li>
-            <li>이벤트 메소드 구현</li>
-            <li>다양한 플러그인 활용</li>
-            <li>비동기 함수 setInterval(), setTimeout() 사용</li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="list-box list-box02">
-        <li class="skill3">
-          <h3>React</h3>
-          <ul>
-            <li>React 생성 및 배포</li>
-            <li>React-router-dom 활용</li>
-            <li>styled-components를 이용하여 스타일 구성</li>
-            <li>Axios를 이용한 외부 API 및 백엔드와 통신</li>
-            <li>useState, useEffect, useNavigate 등의 Hook 활용</li>
-          </ul>
-        </li>
-        <li class="skill4">
-          <h3>Tool</h3>
-          <ul>
-            <li>vscode</li>
-            <li>Git, GitHub 활용 및 관리</li>
-            <li>Figma를 활용한 프로토타입 & 와이어프레임 제작</li>
-            <li>Photoshop, Illustrator를 이용한 간단한 이미지 편집</li>
-            <li>Premier Pro를 사용한 간단한 영상 편집</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
-  </section>
-  <section class="project" id="project">
-    <h2>
-      <img src="./assets/images/8665560_folder_open_icon.svg" alt="이미지" />저의 <strong>프로젝트</strong>를 소개합니다.
-    </h2>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>신입 웹퍼블리셔 성영은입니다</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
     <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slide01">
-          <a href="./singsingo.html">
-            <div class="project-box">
-              <h4>싱싱고</h4>
-              <div class="tag">
-                <p>#팀 프로젝트</p>
-                <p>#React</p>
-                <p>#UI/UX</p>
-              </div>
-            </div>
-            <img src="./assets/images/싱싱고이미지.png" alt="싱싱고1" />
-            <!-- <div class="view">
-              <img src="./assets/images/view.png" alt="자세히보기" />
-            </div> -->
-          </a>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- og -->
+    <meta property="og:title" content="성영은의 포트폴리오입니다." />
+    <meta property="og:url" content="https://youngeunoo.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://youngeunoo.github.io/portfolio/images/미리보기.png"
+    />
+    <meta property="og:title" content="성영은의 포트폴리오" />
+    <meta
+      property="og:description"
+      content="즐거움을 추구하는 성영은의 포트폴리오입니다!"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- moblie -->
+    <link
+      rel="stylesheet"
+      media="(width <= 600px)"
+      href="./assets/styles/index-mobile.css"
+    />
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <!-- typeit -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- js -->
+    <script defer src="./index.js"></script>
+  </head>
+
+  <body>
+    <!-- main -->
+    <section class="main" id="main">
+      <h1>
+        <img
+          src="./assets/images/9310152_star_sparkle_icon.svg"
+          alt="꾸밈"
+          class="star"
+        />
+        안녕하세요.<br />신입 웹퍼블리셔<br /><span
+          class="text-box"
+          id="textBox"
+        ></span>
+        <img
+          src="./assets/images/flare_FILL1_wght200_GRAD0_opsz20.svg"
+          alt="꾸밈"
+          class="flare"
+        />
+      </h1>
+      <img src="./assets/images/red.png" alt="color" class="red" />
+      <img src="./assets/images/yellow.png" alt="color" class="yellow" />
+      <img src="./assets/images/green.png" alt="color" class="green" />
+      <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+    </section>
+    <section class="intro" id="intro">
+      <div class="intro-container">
+        <h3>저는</h3>
+        <div class="intro-box">
+          <p>
+            경험을 통해 <strong>다양한 배움</strong>을 얻는 것을 좋아합니다.<img
+              src="./assets/images/책.svg"
+              alt="책"
+              class="book"
+            />
+          </p>
+          <p>
+            <img
+              src="./assets/images/책임감.svg"
+              alt="책임감"
+              class="note"
+            /><strong>책임감</strong>을 무엇보다 중요시합니다.
+          </p>
+          <p>
+            트렌드에 민감하고 <strong>습득력</strong>이 좋습니다.<img
+              src="./assets/images/새싹.svg"
+              alt="새싹"
+              class="plant"
+            />
+          </p>
+          <p>
+            <img
+              src="./assets/images/음표.svg"
+              alt="음표"
+              class="music_note"
+            /><strong>즐거움</strong>을 추구하고 만들어 나갑니다.
+          </p>
         </div>
-        <div class="swiper-slide slide02">
-          <a href="#">
-            <div class="project-box">
-              <h4>준비 중입니다</h4>
-              <div class="tag">
-                <p>#개인 프로젝트</p>
-                <p>#준비 중</p>
-                <p>#준비 중</p>
+        <h3>이런 사람입니다.</h3>
+      </div>
+
+      <img src="./assets/images/red.png" alt="color" class="red" />
+      <img src="./assets/images/yellow.png" alt="color" class="yellow" />
+      <img src="./assets/images/green.png" alt="color" class="green" />
+      <img src="./assets/images/blue.png" alt="color" class="blue" />
+      <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+    </section>
+    <section class="skill" id="skill">
+      <h2>
+        제가 가진 <strong>기술</strong>을 소개합니다.
+        <img
+          src="./assets/images/build_FILL0_wght200_GRAD0_opsz20.svg"
+          alt="기술"
+        />
+      </h2>
+      <div class="skill-box">
+        <ul class="list-box list-box01">
+          <li class="skill1">
+            <h3>HTML5<br />/ CSS3</h3>
+            <ul>
+              <li>웹 접근성과 웹 표준을 고려한 시맨틱 마크업</li>
+              <li>미디어쿼리를 이용한 반응형 웹 제작</li>
+              <li>flex, grid, position을 사용한 레이아웃 구현</li>
+              <li>애니메이션 구현</li>
+              <li>CSS를 활용한 다양한 스타일 구현</li>
+            </ul>
+          </li>
+          <li class="skill2">
+            <h3>Java Script</h3>
+            <ul>
+              <li>ES6+ 문법 사용</li>
+              <li>이벤트 메소드 구현</li>
+              <li>다양한 플러그인 활용</li>
+              <li>비동기 함수 setInterval(), setTimeout() 사용</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="list-box list-box02">
+          <li class="skill3">
+            <h3>React</h3>
+            <ul>
+              <li>React 생성 및 배포</li>
+              <li>React-router-dom 활용</li>
+              <li>styled-components를 이용하여 스타일 구성</li>
+              <li>Axios를 이용한 외부 API 및 백엔드와 통신</li>
+              <li>useState, useEffect, useNavigate 등의 Hook 활용</li>
+            </ul>
+          </li>
+          <li class="skill4">
+            <h3>Tool</h3>
+            <ul>
+              <li>vscode</li>
+              <li>Git, GitHub 활용 및 관리</li>
+              <li>Figma를 활용한 프로토타입 & 와이어프레임 제작</li>
+              <li>Photoshop, Illustrator를 이용한 간단한 이미지 편집</li>
+              <li>Premier Pro를 사용한 간단한 영상 편집</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+    </section>
+    <section class="project" id="project">
+      <h2>
+        <img
+          src="./assets/images/8665560_folder_open_icon.svg"
+          alt="이미지"
+        />저의 <strong>프로젝트</strong>를 소개합니다.
+      </h2>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide01">
+            <a href="./singsingo.html">
+              <div class="project-box">
+                <h4>싱싱고</h4>
+                <div class="tag">
+                  <p>#팀 프로젝트</p>
+                  <p>#React</p>
+                  <p>#UI/UX</p>
+                </div>
               </div>
-            </div>
-            <img src="./assets/images/준비중.png" alt="대표이미지" />
-            <!-- <div class="view">
+              <img src="./assets/images/싱싱고이미지.png" alt="싱싱고1" />
+              <!-- <div class="view">
               <img src="./assets/images/view.png" alt="자세히보기" />
             </div> -->
-          </a>
+            </a>
+          </div>
+          <div class="swiper-slide slide02">
+            <a href="#">
+              <div class="project-box">
+                <h4>준비 중입니다</h4>
+                <div class="tag">
+                  <p>#개인 프로젝트</p>
+                  <p>#준비 중</p>
+                  <p>#준비 중</p>
+                </div>
+              </div>
+              <img src="./assets/images/준비중.png" alt="대표이미지" />
+              <!-- <div class="view">
+              <img src="./assets/images/view.png" alt="자세히보기" />
+            </div> -->
+            </a>
+          </div>
+          <div class="swiper-slide slide03">
+            <a href="./bukgu.html" class="hover-area">
+              <div class="project-box">
+                <h4>북구 스토리텔링 협의회</h4>
+                <div class="tag">
+                  <p>#팀 프로젝트</p>
+                  <p>#HTML5</p>
+                  <p>#CSS3</p>
+                </div>
+              </div>
+              <img src="./assets/images/팀프로젝트1-1.png" alt="북구1" />
+              <!-- <div class="view">
+              <img src="./assets/images/view.png" alt="자세히보기" />
+            </div> -->
+            </a>
+          </div>
+          <div class="swiper-slide slide04">
+            <a href="#">
+              <div class="project-box">
+                <h4>준비 중입니다</h4>
+                <div class="tag">
+                  <p># 개인 프로젝트</p>
+                  <p># 준비 중</p>
+                  <p># 준비 중</p>
+                </div>
+              </div>
+              <img src="./assets/images/준비중.png" alt="대표이미지" />
+              <!-- <div class="view">
+              <img src="./assets/images/view.png" alt="자세히보기" />
+            </div> -->
+            </a>
+          </div>
         </div>
-        <div class="swiper-slide slide03">
-          <a href="./bukgu.html" class="hover-area">
-            <div class="project-box">
-              <h4>북구 스토리텔링 협의회</h4>
-              <div class="tag">
-                <p>#팀 프로젝트</p>
-                <p>#HTML5</p>
-                <p>#CSS3</p>
-              </div>
-            </div>
-            <img src="./assets/images/팀프로젝트1-1.png" alt="북구1" />
-            <!-- <div class="view">
-              <img src="./assets/images/view.png" alt="자세히보기" />
-            </div> -->
-          </a>
+        <div class="swiper-button-next">
+          <img src="./assets/images/right-arrow.png" alt="다음" />
         </div>
-        <div class="swiper-slide slide04">
-          <a href="#">
-            <div class="project-box">
-              <h4>준비 중입니다</h4>
-              <div class="tag">
-                <p># 개인 프로젝트</p>
-                <p># 준비 중</p>
-                <p># 준비 중</p>
-              </div>
-            </div>
-            <img src="./assets/images/준비중.png" alt="대표이미지" />
-            <!-- <div class="view">
-              <img src="./assets/images/view.png" alt="자세히보기" />
-            </div> -->
-          </a>
+        <div class="swiper-button-prev">
+          <img src="./assets/images/left-arrow.png" alt="이전" />
         </div>
       </div>
-      <div class="swiper-button-next"><img src="./assets/images/right-arrow.png" alt="다음"></div>
-      <div class="swiper-button-prev"><img src="./assets/images/left-arrow.png" alt="이전"></div>
-    </div>
-    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
-  </section>
-  <section class="outro" id="outro">
-    <h2>
-      감사합니다<img src="./assets/images/sentiment_satisfied_FILL0_wght200_GRAD0_opsz20.svg" alt="smile" />
-    </h2>
-    <div class="link-box">
-      <div class="msg-box">
-        저의
-        <div class="rotating-text-wrapper">
-          <p>학습과정이</p>
-          <p>기록일지가</p>
-          <p>작업물들이</p>
+      <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+    </section>
+    <section class="outro" id="outro">
+      <h2>
+        감사합니다<img
+          src="./assets/images/sentiment_satisfied_FILL0_wght200_GRAD0_opsz20.svg"
+          alt="smile"
+        />
+      </h2>
+      <div class="link-box">
+        <div class="msg-box">
+          저의
+          <div class="rotating-text-wrapper">
+            <p>학습과정이</p>
+            <p>기록일지가</p>
+            <p>작업물들이</p>
+          </div>
+          궁금하신가요?
         </div>
-        궁금하신가요?
+        <img src="./assets/images/화살표.svg" alt="화살표" />
+        <a href="#">GitHub로 바로가기</a>
       </div>
-      <img src="./assets/images/화살표.svg" alt="화살표" />
-      <a href="#">GitHub로 바로가기</a>
-    </div>
-    <img src="./assets/images/red.png" alt="color" class="color red" />
-    <img src="./assets/images/yellow.png" alt="color" class="color yellow" />
-    <img src="./assets/images/blue.png" alt="color" class="color blue" />
-  </section>
-  <a href="#">
-    <img src="./assets/images/up.svg" alt="up" class="up-btn" /></a>
+      <img src="./assets/images/red.png" alt="color" class="color red" />
+      <img src="./assets/images/yellow.png" alt="color" class="color yellow" />
+      <img src="./assets/images/blue.png" alt="color" class="color blue" />
+    </section>
+    <a href="#">
+      <img src="./assets/images/up.svg" alt="up" class="up-btn"
+    /></a>
 
-  <footer>
-    <p>ssyopw924@naver.com</p>
-  </footer>
-</body>
-
+    <footer>
+      <p>ssyopw924@naver.com</p>
+    </footer>
+  </body>
 </html>

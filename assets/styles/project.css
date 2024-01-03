@@ -79,9 +79,8 @@ header a:hover {
   margin: auto;
   z-index: 500;
 }
-.intro .title p {
+.intro .title h3 {
   position: absolute;
-  background-color: #96b6c5;
   padding: 3px 7px;
   border-radius: 1px;
   border: 1px #232323 solid;
@@ -90,6 +89,9 @@ header a:hover {
   left: 50%;
   transform: translateX(-50%);
   font-weight: 500;
+}
+.intro .title .bukgu {
+  background-color: #96b6c5;
 }
 .intro .title .singsingo {
   background-color: #ffdbaa;
@@ -206,6 +208,26 @@ article .review-title ul li::before {
   content: "-";
   margin-right: 5px;
 }
+article .problem .code-btn {
+  cursor: pointer;
+  border: #232323 1px solid;
+  border-radius: 1px;
+  display: inline-block;
+  padding: 0 10px;
+  transition: 0.3s;
+  font-size: 12px;
+  margin: 0 0 0 5px;
+  font-family: "Pretendard Variable";
+  font-weight: 500;
+}
+article .problem .code-btn:hover {
+  background-color: #232323;
+  color: #fff;
+}
+article .problem .code {
+  padding: 0;
+  margin: 5px auto;
+}
 .btn-box {
   display: flex;
   justify-content: space-evenly;
@@ -214,9 +236,8 @@ article .review-title ul li::before {
   transform: translate(-50%, -280px);
   left: 50%;
 }
-.btn-box button {
+.btn-box a {
   font-size: 24px;
-  background-color: #96b6c5;
   border: #232323 1px solid;
   border-radius: 1px;
   margin: 50px 0;
@@ -228,16 +249,19 @@ article .review-title ul li::before {
   display: flex;
   align-items: center;
 }
-.btn-box button p {
+.btn-box a p {
   display: inline;
 }
 
-.btn-box button:hover {
+.btn-box a:hover {
   border-radius: 30px;
   transition: 0.3s;
 }
-.singsingo-btn button {
+.singsingo-btn a {
   background-color: #ffdbaa;
+}
+.bukgu-btn a {
+  background-color: #96b6c5;
 }
 
 .design ul {

@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(".list-box02", { opacity: 0, y: 50 })
     .to(".list-box02", { opacity: 1, y: 0 });
 
+  function showListBox02() {
+    gsap.to(".list_box02", { opacity: 1, y: 0 });
+  }
+
   // Swiper 초기화
   const swiper = new Swiper(".mySwiper", {
     navigation: {
@@ -35,10 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-
-  function showListBox02() {
-    gsap.to(".list_box02", { opacity: 1, y: 0 });
-  }
 
   new TypeIt("#textBox", {
     strings: "<strong>성영은</strong>입니다!",

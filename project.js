@@ -5,4 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: "ease-in-out",
     once: true,
   });
+  $(function () {
+    $(".code-btn").click(function () {
+      $(".code").slideToggle(400);
+    });
+  });
 });
