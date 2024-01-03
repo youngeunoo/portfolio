@@ -35,8 +35,8 @@ html {
   bottom: 20px;
 }
 ::selection {
-  background-color: #fff6a1;
-  color: rgb(255, 255, 255);
+  background-color: #999999;
+  color: #fff;
 }
 a {
   color: inherit;
@@ -51,6 +51,7 @@ header {
   position: fixed;
   font-family: "SCoreDream";
   font-size: 16px;
+  z-index: 9999;
 }
 header menu {
   list-style: none;
@@ -89,6 +90,9 @@ header a:hover {
   left: 50%;
   transform: translateX(-50%);
   font-weight: 500;
+}
+.intro .title .singsingo {
+  background-color: #ffdbaa;
 }
 .intro .title img {
   width: 800px;
@@ -149,15 +153,12 @@ header a:hover {
 article.content {
   display: grid;
   place-content: center;
-  /* margin: 0px 0; */
   padding-bottom: 250px;
+  width: 50%;
+  margin: auto;
 }
 article.content div {
   margin: 60px 0;
-}
-article.content {
-  width: 45%;
-  margin: auto;
 }
 article.content h3 {
   font-size: 26px;
@@ -166,6 +167,9 @@ article.content h3 {
   display: inline-block;
   margin-bottom: 25px;
   font-weight: 500;
+}
+article.singsingo-content h3 {
+  border-bottom: #ffdcaa9d solid 5px;
 }
 article .process-title li span {
   font-weight: 500;
@@ -202,61 +206,58 @@ article .review-title ul li::before {
   content: "-";
   margin-right: 5px;
 }
-button {
-  font-size: 24px;
-  background-color: #96b6c5;
-  border: #232323 1px solid;
-  border-radius: 1px;
-  margin: 50px;
-  font-family: "SCoreDream";
-  padding: 15px;
-  position: absolute;
-  transform: translate(-50%, -280px);
-  left: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-button p {
-  display: inline;
-}
-
-button:hover {
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
 .btn-box {
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 40%;
   position: absolute;
   transform: translate(-50%, -280px);
   left: 50%;
 }
 .btn-box button {
+  font-size: 24px;
+  background-color: #96b6c5;
+  border: #232323 1px solid;
+  border-radius: 1px;
+  margin: 50px 0;
+  font-family: "SCoreDream";
+  padding: 15px;
   position: relative;
-  transform: translate(0, 0);
   left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.btn-box button p {
+  display: inline;
+}
+
+.btn-box button:hover {
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.singsingo-btn button {
+  background-color: #ffdbaa;
 }
 
 .design ul {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  min-width: 600px;
 }
-
-.design ul li span {
-  margin-bottom: 50px;
+.design > ul > li {
+  margin: 20px 0;
 }
 .design ul li ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-family: "Pretendard Variable";
   font-size: 14px;
-  margin-top: 10px;
+  margin: 10px 0 0 30px;
 }
 .design ul li ul li {
-  margin: 5px;
+  margin: 5px 20px;
+  align-self: center;
 }
 .design ul li .keyword li {
   border: 1px #232323 solid;
@@ -269,6 +270,28 @@ button:hover {
 .design ul li .keyword li:hover {
   background-color: #232323;
   color: #fff;
+}
+.design ul li .color-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.design ul li .color-list li:first-child {
+  min-width: 70px;
+}
+.design ul li .color-list li:last-child {
+  word-break: keep-all;
+  line-height: 1.3;
+}
+.design ul li .font li {
+  margin: 0 0 0 5px;
+}
+
+.design ul li .icon-list li {
+  line-height: 1.3;
+}
+.design ul li .icon-list img {
+  width: 60px;
 }
 .design ul li ul li::before {
   content: "";

@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+header {
+  display: none;
+}
 .intro {
   min-width: inherit;
   margin: 0 0 100px;
@@ -45,31 +47,46 @@
 }
 
 /* content */
-article {
-  padding: 0 50px 200px;
+article.content {
+  padding: 0 0px 200px;
+  width: 86%;
 }
-article div {
+article.content div {
   line-height: 1.8;
 }
-article h3 {
+article.content h3 {
   font-size: 1.5rem;
   height: 32px;
 }
-article ul {
+article.content ul {
   font-size: 1.1rem;
 }
-
-button {
-  margin: 50px auto;
+.btn-box {
+  width: 100%;
+}
+.btn-box button {
+  margin: 100px 0;
   font-size: 1.2rem;
 }
 
 .design ul {
   flex-direction: column;
+  min-width: inherit;
 }
 .design ul li {
   margin: 20px;
 }
 .design ul li .keyword li {
   width: 80px;
+}
+.design ul li .color-list {
+  flex-flow: wrap;
+}
+.design ul li .color-list li,
+.design ul li .icon-list li {
+  margin-top: 20px;
+}
+.design ul li .icon-list {
+  flex-flow: wrap;
+  justify-content: space-around;
 }
