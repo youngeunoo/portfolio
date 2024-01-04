@@ -15,10 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(".list-box01", { opacity: 1, y: 0 })
     .to(".list-box01", { opacity: 0, y: -50, onComplete: showListBox02 })
     .from(".list-box02", { opacity: 0, y: 50 })
-    .to(".list-box02", { opacity: 1, y: 0 });
+    .to(".list-box02", { opacity: 1, y: 0 })
+    .to(".list-box02", { opacity: 0, y: -50, onComplete: showListBox03 })
+    .from(".list-box03", { opacity: 0, y: 50 })
+    .to(".list-box03", { opacity: 1, y: 0 });
 
   function showListBox02() {
     gsap.to(".list_box02", { opacity: 1, y: 0 });
+  }
+  function showListBox03() {
+    gsap.to(".list-box03", { opacity: 1, y: 0 });
   }
 
   // Swiper 초기화

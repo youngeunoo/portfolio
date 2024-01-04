@@ -240,12 +240,19 @@ a:visited {
   position: absolute;
   transform: translateY(0);
 }
+.skill .list-box03 {
+  opacity: 1;
+  top: 13%;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 100%;
+}
 
 .skill .list-box li {
   display: flex;
   align-items: center;
   flex: 0 0 100%;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .skill .list-box li h3 {
@@ -267,6 +274,12 @@ a:visited {
 .skill .list-box .skill4 h3 {
   background: url(../images/bluecircle.png) no-repeat center;
 }
+.skill .list-box .skill5 h3 {
+  background: url(../images/redcircle.png) no-repeat center;
+}
+.skill .list-box .skill6 h3 {
+  background: url(../images/yellowcircle.png) no-repeat center;
+}
 .skill .list-box li ul {
   padding-left: 50px;
   line-height: 1.5;
@@ -275,15 +288,33 @@ a:visited {
   font-weight: 400;
   position: relative;
 }
-.skill .list-box li:nth-of-type(odd) ul::after {
+.skill .list-box01 li:nth-of-type(1) ul::after {
   content: "";
   background-color: #232323;
   width: 657px;
   height: 1px;
   position: absolute;
-  top: 162px;
+  top: 167px;
   left: 30px;
 }
+.skill .list-box02 li:nth-of-type(1) ul::after {
+  content: "";
+  background-color: #232323;
+  width: 657px;
+  height: 1px;
+  position: absolute;
+  top: 175px;
+  left: 30px;
+}
+/* .skill .list-box03 li:nth-of-type(1) ul::after {
+  content: "";
+  background-color: #232323;
+  width: 657px;
+  height: 1px;
+  position: absolute;
+  top: 140px;
+  left: 30px;
+} */
 .skill .list-box li ul li::before {
   content: "•";
   margin-right: 5px;
