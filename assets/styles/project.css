@@ -27,7 +27,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 .scroll {
   position: absolute;
@@ -105,7 +105,7 @@ header a:hover {
 }
 .intro .info {
   text-align: center;
-  margin: 100px auto 0;
+  margin: 70px auto 0;
   width: 670px;
   position: relative;
   z-index: 500;
