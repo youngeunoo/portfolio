@@ -23,6 +23,11 @@ header {
   height: 230px;
   margin: auto;
 }
+.intro .title video {
+  width: 400px;
+  height: 230px;
+  margin: auto;
+}
 .intro .info {
   width: 90%;
   font-size: 1.1rem;
@@ -97,4 +102,10 @@ article .problem pre {
 .design ul li .icon-list {
   flex-flow: wrap;
   justify-content: space-around;
+}
+.design ul li .img-list {
+  flex-flow: wrap;
+}
+.design ul li .img-list img {
+  width: 80px;
 }

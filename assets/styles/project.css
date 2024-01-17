@@ -96,7 +96,17 @@ header a:hover {
 .intro .title .singsingo {
   background-color: #ffdbaa;
 }
+.intro .title .lilybyred {
+  background-color: #ffb7b7;
+}
 .intro .title img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1px;
+  border: 1px #232323 solid;
+}
+.intro video {
   width: 800px;
   height: 400px;
   object-fit: cover;
@@ -173,6 +183,9 @@ article.content h3 {
 article.singsingo-content h3 {
   border-bottom: #ffdcaa9d solid 5px;
 }
+article.lilybyred-content h3 {
+  border-bottom: #ffb7b791 solid 5px;
+}
 article .process-title li span {
   font-weight: 500;
   font-size: 22px;
@@ -208,7 +221,7 @@ article .review-title ul li::before {
   content: "-";
   margin-right: 5px;
 }
-article .problem pre {
+article pre {
   background-color: #232323;
   color: #fff;
   font-size: 15px;
@@ -273,6 +286,9 @@ article .problem .code {
 .bukgu-btn a {
   background-color: #96b6c5;
 }
+.lilybyred-btn a {
+  background-color: #ffb7b7;
+}
 
 .design ul {
   display: flex;
@@ -320,12 +336,15 @@ article .problem .code {
 .design ul li .font li {
   margin: 0 0 0 5px;
 }
-
 .design ul li .icon-list li {
   line-height: 1.3;
 }
 .design ul li .icon-list img {
   width: 60px;
+}
+.design ul li .img-list img {
+  height: 100px;
+  object-fit: contain;
 }
 .design ul li ul li::before {
   content: "";
