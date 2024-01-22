@@ -369,25 +369,11 @@ a:visited {
 .project .swiper-slide:hover img {
   filter: inherit;
 }
-.project .swiper-slide:nth-child(1) h4 {
-  background-color: #999999;
-  transition: 0.3s;
-  border: 1px solid #232323;
-  border-radius: 2px;
-}
-.project .swiper-slide:nth-child(2) h4 {
-  background-color: #999999;
-  transition: 0.3s;
-  border: 1px solid #232323;
-  border-radius: 2px;
-}
-.project .swiper-slide:nth-child(3) h4 {
-  background-color: #999999;
-  transition: 0.3s;
-  border: 1px solid #232323;
-  border-radius: 2px;
-}
-.project .swiper-slide:nth-child(4) h4 {
+.project .swiper-slide:nth-child(1) h4,
+.project .swiper-slide:nth-child(2) h4,
+.project .swiper-slide:nth-child(3) h4,
+.project .swiper-slide:nth-child(4) h4,
+.project .swiper-slide:nth-child(5) h4 {
   background-color: #999999;
   transition: 0.3s;
   border: 1px solid #232323;
