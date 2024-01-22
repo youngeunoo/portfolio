@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="./assets/styles/project.css" />
+  <!-- mobile -->
+  <link rel="stylesheet" media="(width <= 600px)" href="./assets/styles/project-mobile.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- js -->
+  <script defer src="./project.js"></script>
+  <title>GMF 2017</title>
+</head>
+
+<body>
+  <header>
+    <menu>
+      <li><a href="./index.html#project">뒤로가기</a></li>
+    </menu>
+  </header>
+  <article class="intro">
+    <div class="title">
+      <img src="./assets/images/GMF이미지.PNG" alt="gmf이미지" />
+      <h3 class="GMF2017">GMF 2017</h3>
+    </div>
+    <p class="info">
+      GMF 2017의 프로모션 페이지를
+      <strong>기획하고 반응형 웹으로 구현하여</strong> 사용자가 다양한 기기로
+      행사 정보를 확인할 수 있도록 한다.
+    </p>
+    <img src="./assets/images/red.png" alt="color" class="red" />
+    <img src="./assets/images/yellow.png" alt="color" class="yellow" />
+    <img src="./assets/images/green.png" alt="color" class="green" />
+    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+  </article>
+
+  <article class="content GMF2017-content">
+    <div class="overview" data-aos="fade-up">
+      <h3>개인 프로젝트 개요</h3>
+      <ul>
+        <li>작업 기간 : 24. 01. 17 - 24. 01. 21</li>
+        <li>기여도 : 100%</li>
+      </ul>
+    </div>
+    <div class="goal" data-aos="fade-up">
+      <h3>목표</h3>
+      <li>
+        새로운 형태의 페이지를 구현하며
+        <strong>레이아웃 구성의 다양성</strong>을 높임
+      </li>
+      <li>다양한 메뉴의 형태를 구현함</li>
+      <li>
+        반응형 웹 구현을 통해
+        <strong>반응형 웹 작업에 대한 이해를 높이고 다양한 크기의 브라우저에 대응할
+          수 있도록 함.</strong>
+      </li>
+    </div>
+
+    <div class="process" data-aos="fade-up">
+      <h3>작업 순서</h3>
+      <ul class="process-title">
+        <li>
+          <span>사전 기획</span>
+          <ul class="process-content">
+            <li>리디자인할 대상 선정</li>
+            <li>페이지 분석</li>
+          </ul>
+        </li>
+        <li>
+          <span>디자인 작업</span>
+          <ul class="process-content">
+            <li>메인 색상과 이용 폰트 선정</li>
+            <li>필요한 이미지와 아이콘 수집</li>
+            <li>디자인 키워드 선정</li>
+            <li>디자인 완성</li>
+          </ul>
+        </li>
+        <li>
+          <span>개발 작업</span>
+          <ul class="process-content">
+            <li>페이지 레이아웃 작업</li>
+            <li>내용 구성 후 작성</li>
+            <li>header 영역 GSAP 작업</li>
+            <li>사이드 메뉴의 sticky 작업</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skill" data-aos="fade-up">
+      <h3>사용 기술 / 도구</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JaveScript</li>
+        <li>GSAP</li>
+        <li>Figma</li>
+      </ul>
+    </div>
+
+    <div class="design" data-aos="fade-up">
+      <h3>디자인 가이드</h3>
+      <ul>
+        <li>
+          <span>키워드</span>
+          <ul class="keyword">
+            <li>#활기참</li>
+            <li>#생동감</li>
+            <li>#우주</li>
+          </ul>
+        </li>
+        <li>
+          <span>색상</span>
+          <ul class="color-list">
+            <li>
+              <p>메인 색상</p>
+              <img src="./assets/images/GMFcolor.png" alt="릴리바이레드 메인컬러" />
+            </li>
+            <li>
+              → 우주의 느낌을 주는 색상과 GMF의 대표적인 이미지 색상을
+              사용하여 컨셉을 전달
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span>폰트</span>
+          <ul class="font">
+            <li><img src="./assets/images/gmffont.png" alt="gmf폰트"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="publishing" data-aos="fade-up">
+      <h3>퍼블리싱</h3>
+      <ul>
+        <li>사이드 메뉴 영역에 position:sticky를 적용하여 스크롤시에도 해당하는 영역을 따라올 수 있게 하였다.</li>
+        <li>timetable 영역의 모바일 버전에서는 스테이지별로 선택하여 볼 수 있도록 해 보기 쉽도록 하였다.
+        </li>
+        <li>GSAP ScrollTrigger를 사용하여 상단바의 형태가 위치에 따라 바뀔 수 있도록 하였다.
+        </li>
+      </ul>
+    </div>
+
+    <div class="problem" data-aos="fade-up">
+      <h3>문제 및 해결</h3>
+      <ul>
+        <li>타임테이블에 첨부된 이미지가 모바일에서 확인하기엔 부적절하여 어떤 식으로 제공해야 할지 고민했다. <p>
+            → 각각의 스테이지를 선택할 수 있는 select box를 만들어 원하는 스테이지를 선택하면 해당 스테이지의 타임테이블을 확인할 수 있도록 했다.
+          </p>
+        </li>
+        <li>태블릿, 모바일 버전에서 메뉴 바가 내려올 때, 메뉴 외 배경은 블러 처리를 하고 싶어 backdrop-filter:blur를 적용하였으나 적용되지 않았다. <p>→ 이유를 찾아보니 배경 요소가
+            필요하다고 해서 div로 가상 요소를 추가한 후에 브라우저를 전부 채울 수 있게 크기를 설정하고 적용하니 원하던 효과가 적용되었다.</p>
+        </li>
+        <li>사이드 메뉴에서 제목을 누르면 각 영역으로 이동이 될 수 있도록 하였는데, 마지막 영역에서 맨 위 버튼을 누르면 원하는 영역으로 이동하지 않았다. <p>→ 투명하게 설정된 header의 로고와
+            겹쳐서 해당 버튼이 제대로 클릭되지 않고 있는 게 원인이었고, header의 height 값을 조절하여 해당 문제를 해결하였다.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="review" data-aos="fade-up">
+      <h3>후기</h3>
+      <ul class="review-title">
+        <li><span>아쉬운 부분</span>
+          <ul>
+            <li>애니메이션 부족: festival map 영역의 이미지가 너무 단조롭게 들어가 있음. 직접 이미지까지 구성했다면 애니메이션 효과를 넣어 더 다채롭게 구성할 수 있었을 것 같음.</li>
+            <li>select box 디자인: select box를 디자인 하는 데 한계가 있어 완벽하게 디자인하지 못하였음.</li>
+            <li>시각적 요소 부족: 시선을 한눈에 사로잡는 요소들이 부족한 것 같음.</li>
+          </ul>
+        </li>
+        <li><span>잘한 부분</span>
+          <ul>
+            <li>자유로운 반응형 구현: 어떤 사이즈에도 어색하지 않은 디테일한 반응협 웹을 구현했다는 점이 매우 만족스러움.</li>
+            <li>다양한 메뉴 형태 구성: 다양한 형태의 메뉴들을 페이지에 잘 어우러지게 구현함.</li>
+            <li>직관적인 정보 전달: 사용자가 행사에 대한 정보를 잘 알 수 있도록 깔끔하고 보기 쉽게 구성함.</li>
+          </ul>
+        </li>
+        <li><span>배운 점 및 주관적인 의견</span>
+          <ul>
+            <li>기존 작업과는 다른 새로운 형태의 프로젝트를 진행하며 다양한 레이아웃의 경험을 할 수 있어 좋았다.</li>
+            <li>반응형 웹 작업을 완벽하게 하는 경험이 처음이라 긴장했는데, 데스크탑, 태블릿, 모바일의 큰 틀을 잡고, 디테일한 부분을 잡아나가는 법을 금방 터득하여 뿌듯했다.</li>
+            <li>정보 전달을 원활히 하기 위해 다양한 형태를 구현해 보는 과정에서 다양한 아이디어를 생각해 볼 수 있었다.</li>
+            <li>기존 이미지를 활용하여 페이지를 구현하다보니 원하는만큼의 디자인을 끌어내지 못한 경우가 있어 아쉬웠다. 이 점은 계속해서 공부하여 채워나가고 싶다.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <div class="btn-box GMF2017-btn">
+    <a href="./GMF2017작업일지.pdf" target="_blank">작업일지 보러가기‣</a>
+    <a href="https://youngeunoo.github.io/GMF-project/" target="_blank">
+      <p>완성된 프로젝트 보러가기‣</p>
+    </a>
+  </div>
+
+  <a href="#">
+    <img src="./assets/images/up.svg" alt="up" class="up-btn" /></a>
+</body>
+
+</html>

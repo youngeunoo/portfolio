@@ -99,6 +99,9 @@ header a:hover {
 .intro .title .lilybyred {
   background-color: #ffb7b7;
 }
+.intro .title .GMF2017 {
+  background-color: #96c291;
+}
 .intro .title img {
   width: 800px;
   height: 400px;
@@ -185,6 +188,9 @@ article.singsingo-content h3 {
 }
 article.lilybyred-content h3 {
   border-bottom: #ffb7b791 solid 5px;
+}
+article.GMF2017-content h3 {
+  border-bottom: #96c29193 solid 5px;
 }
 article .process-title li span {
   font-weight: 500;
@@ -288,6 +294,9 @@ article .problem .code {
 }
 .lilybyred-btn a {
   background-color: #ffb7b7;
+}
+.GMF2017-btn a {
+  background-color: #96c291;
 }
 
 .design ul {

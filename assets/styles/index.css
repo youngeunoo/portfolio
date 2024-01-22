@@ -307,15 +307,6 @@ a:visited {
   top: 175px;
   left: 30px;
 }
-/* .skill .list-box03 li:nth-of-type(1) ul::after {
-  content: "";
-  background-color: #232323;
-  width: 657px;
-  height: 1px;
-  position: absolute;
-  top: 140px;
-  left: 30px;
-} */
 .skill .list-box li ul li::before {
   content: "•";
   margin-right: 5px;
@@ -409,10 +400,10 @@ a:visited {
   background-color: #ffb7b7;
 }
 .project .swiper-slide:hover:nth-child(3) h4 {
-  background-color: #96b6c5;
+  background-color: #96c291;
 }
 .project .swiper-slide:hover:nth-child(4) h4 {
-  background-color: #96c291;
+  background-color: #96b6c5;
 }
 .project .project-box .tag {
   position: absolute;
