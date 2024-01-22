@@ -393,7 +393,8 @@ a:visited {
   border: 1px solid #232323;
   border-radius: 2px;
 }
-.project .swiper-slide:hover:nth-child(1) h4 {
+.project .swiper-slide:hover:nth-child(1) h4,
+.project .swiper-slide:hover:nth-child(5) h4 {
   background-color: #ffdbaa;
 }
 .project .swiper-slide:hover:nth-child(2) h4 {
