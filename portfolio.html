@@ -1,170 +1,212 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- reset -->
+    <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/styles/project.css" />
+    <!-- mobile -->
+    <link
+      rel="stylesheet"
+      media="(width <= 600px)"
+      href="./assets/styles/project-mobile.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- js -->
+    <script defer src="./project.js"></script>
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
-  <!-- reset -->
-  <link rel="stylesheet" href="./assets/styles/minireset.min.css" />
-  <!-- style -->
-  <link rel="stylesheet" href="./assets/styles/project.css" />
-  <!-- mobile -->
-  <link rel="stylesheet" media="(width <= 600px)" href="./assets/styles/project-mobile.css" />
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Lenis -->
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- js -->
-  <script defer src="./project.js"></script>
-  <title>Portfolio</title>
-</head>
+  <body>
+    <header>
+      <menu>
+        <li><a href="./index.html#project">뒤로가기</a></li>
+      </menu>
+    </header>
+    <article class="intro">
+      <div class="title">
+        <img
+          src="./assets/images/portfolio-img.png"
+          alt="포트폴리오 대표이미지"
+        />
+        <h3 class="portfolio">Portfolio</h3>
+      </div>
+      <p class="info">
+        포트폴리오 페이지를 기획하고 구현하여
+        <strong>제작한 프로젝트를 소개</strong>한다.
+      </p>
+      <img src="./assets/images/red.png" alt="color" class="red" />
+      <img src="./assets/images/yellow.png" alt="color" class="yellow" />
+      <img src="./assets/images/green.png" alt="color" class="green" />
+      <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
+    </article>
 
-<body>
-  <header>
-    <menu>
-      <li><a href="./index.html#project">뒤로가기</a></li>
-    </menu>
-  </header>
-  <article class="intro">
-    <div class="title">
-      <img src="./assets/images/portfolio-img.png" alt="포트폴리오 대표이미지">
-      <h3 class="portfolio">Portfolio</h3>
+    <article class="content portfolio-content">
+      <div class="overview" data-aos="fade-up">
+        <h3>개인 프로젝트 개요</h3>
+        <ul>
+          <li>작업 기간 : 23. 12. 27 - 24. 01. 04</li>
+          <li>기여도 : 100%</li>
+        </ul>
+      </div>
+      <div class="goal" data-aos="fade-up">
+        <h3>목표</h3>
+        <ul>
+          <li>포트폴리오를 통해 프로젝트와 가진 기술을 소개함.</li>
+          <li>심미적인 디자인을 통해 사용자가 보기 편하도록 함.</li>
+          <li>전하려는 정보가 한눈에 보기 쉽게 읽힐 수 있도록 함.</li>
+        </ul>
+      </div>
+
+      <div class="process" data-aos="fade-up">
+        <h3>작업 순서</h3>
+        <ul class="process-title">
+          <li>
+            <span>사전 기획</span>
+            <ul class="process-content">
+              <li>들어갈 내용 정리</li>
+            </ul>
+          </li>
+          <li>
+            <span>디자인 작업</span>
+            <ul class="process-content">
+              <li>메인 페이지와 프로젝트 상세 페이지 디자인</li>
+              <li>배경 색상, 구성 색상, 폰트 선정</li>
+              <li>필요한 아이콘, 이미지 요소 선정</li>
+            </ul>
+          </li>
+          <li>
+            <span>개발 작업</span>
+            <ul class="process-content">
+              <li>html 마크업 작업</li>
+              <li>css 스타일 작업</li>
+              <li>GSAP의 ScrollTrigger 사용하여 skill 영역 효과 구현</li>
+              <li>outro 영역 애니메이션 적용</li>
+              <li>project 영역 swiper 적용</li>
+              <li>모바일 페이지 작업</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill" data-aos="fade-up">
+        <h3>사용 기술 / 도구</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JaveScript</li>
+          <li>GSAP</li>
+          <li>Swiper</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+
+      <div class="design" data-aos="fade-up">
+        <h3>디자인 가이드</h3>
+        <ul>
+          <li>
+            <span>키워드</span>
+            <ul class="keyword">
+              <li>따뜻함</li>
+              <li>깔끔함</li>
+              <li>차분함</li>
+            </ul>
+          </li>
+          <li>
+            <span>색상</span>
+            <ul class="color-list">
+              <li>
+                <p>포인트 색상</p>
+                <img
+                  src="./assets/images/portfolio-color01.png"
+                  alt="포인트색상"
+                />
+              </li>
+              <li>
+                <p>배경 색상</p>
+                <img
+                  src="./assets/images/portfolio-color02.png"
+                  alt="배경색상"
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>폰트</span>
+            <ul class="font">
+              <li>
+                <img src="./assets/images/portfolio-font.png" alt="폰트" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="publishing" data-aos="fade-up">
+        <h3>퍼블리싱</h3>
+        <ul>
+          <li>
+            GSAP의 ScrollTrigger를 사용하여 skill 영역의 내용들이 차례대로
+            보여질 수 있도록 하였다.
+          </li>
+          <li>
+            Swiper를 적용하여 project 영역의 내용을 차례대로 확인할 수 있도록
+            하였다.
+          </li>
+        </ul>
+      </div>
+
+      <div class="problem" data-aos="fade-up">
+        <h3>문제 및 해결</h3>
+        <ul>
+          <li>
+            position으로 이미지 요소들을 배치했는데, 화면 사이즈가 조금만
+            달라져도 원하는 위치에서 벗어나 버렸다.
+            <p>
+              → div로 요소들을 세세하게 나누고 배치하여 위치 배정에 용이하도록
+              수정하였다.
+            </p>
+          </li>
+          <li>
+            project 영역에서 각 프로젝트에 마우스를 올렸을 때 어떤 효과를 줄지
+            고민하였다.
+            <p>
+              → 어둡게 하기, 돋보기 효과 나타나기 등 여러 가지를 적용해보다가
+              흑백에서 컬러로 변하게 하는 것으로 선택하였다.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <div class="btn-box portfolio-btn">
+      <a href="https://github.com/youngeunoo/portfolio" target="_blank"
+        >작업일지 보러가기‣</a
+      >
+      <a
+        href="https://youngeunoo.github.io/portfolio/index.html"
+        target="_blank"
+      >
+        <p>완성된 프로젝트 보러가기‣</p>
+      </a>
     </div>
-    <p class="info">포트폴리오 페이지를 기획하고 구현하여 <strong>제작한 프로젝트를 소개</strong>한다.</p>
-    <img src="./assets/images/red.png" alt="color" class="red" />
-    <img src="./assets/images/yellow.png" alt="color" class="yellow" />
-    <img src="./assets/images/green.png" alt="color" class="green" />
-    <img src="./assets/images/scroll.png" alt="스크롤" class="scroll" />
-  </article>
 
-  <article class="content portfolio-content">
-    <div class="overview" data-aos="fade-up">
-      <h3>개인 프로젝트 개요</h3>
-      <ul>
-        <li>작업 기간 : 23. 12. 27 - 24. 01. 04</li>
-        <li>기여도 : 100%</li>
-      </ul>
-    </div>
-    <div class="goal" data-aos="fade-up">
-      <h3>목표</h3>
-      <ul>
-        <li>포트폴리오를 통해 프로젝트와 가진 기술을 소개함.</li>
-        <li>심미적인 디자인을 통해 사용자가 보기 편하도록 함.</li>
-        <li>전하려는 정보가 한눈에 보기 쉽게 읽힐 수 있도록 함.</li>
-      </ul>
-    </div>
-
-    <div class="process" data-aos="fade-up">
-      <h3>작업 순서</h3>
-      <ul class="process-title">
-        <li>
-          <span>사전 기획</span>
-          <ul class="process-content">
-            <li></li>
-          </ul>
-        </li>
-        <li>
-          <span>디자인 작업</span>
-          <ul class="process-content">
-            <li></li>
-          </ul>
-        </li>
-        <li>
-          <span>개발 작업</span>
-          <ul class="process-content">
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <div class="skill" data-aos="fade-up">
-      <h3>사용 기술 / 도구</h3>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JaveScript</li>
-        <li>GSAP</li>
-        <li>Swiper</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-
-    <div class="design" data-aos="fade-up">
-      <h3>디자인 가이드</h3>
-      <ul>
-        <li><span>키워드</span>
-          <ul class="keyword">
-            <li></li>
-          </ul>
-        </li>
-        <li><span>색상</span>
-          <ul class="color-list">
-            <li>
-              <p>메인 색상</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <span>폰트</span>
-          <ul class="font">
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <div class="publishing" data-aos="fade-up">
-      <h3>퍼블리싱</h3>
-      <ul>
-        <li></li>
-      </ul>
-    </div>
-
-    <div class="problem" data-aos="fade-up">
-      <h3>문제 및 해결</h3>
-      <ul>
-        <li></li>
-      </ul>
-    </div>
-
-    <div class="review" data-aos="fade-up">
-      <h3>후기</h3>
-      <ul class="review-title">
-        <li><span>아쉬운 부분</span>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-        <li><span>잘한 부분</span>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-        <li><span>배운 점 및 주관적인 의견</span>
-          <ul>
-            <li></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </article>
-
-  <div class="btn-box portfolio-btn">
-    <a href="https://github.com/youngeunoo/portfolio" target="_blank">작업일지 보러가기‣</a>
-    <a href="https://youngeunoo.github.io/portfolio/index.html" target="_blank">
-      <p>완성된 프로젝트 보러가기‣</p>
-    </a>
-  </div>
-
-  <a href="#">
-    <img src="./assets/images/up.svg" alt="up" class="up-btn" /></a>
-</body>
-
+    <a href="#">
+      <img src="./assets/images/up.svg" alt="up" class="up-btn"
+    /></a>
+  </body>
 </html>
