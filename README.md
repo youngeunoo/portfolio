@@ -1,3 +1,5 @@
+https://youngeunoo.github.io/portfolio/
+
 ## 23/12/27
 
 - 포트폴리오에 들어갈 내용 정리
