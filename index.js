@@ -48,11 +48,13 @@ gsap.timeline({
     onEnter: () => {
       gsap.to(".intro-box p", {
         opacity: 1,
+        transform: "translateY(0)",
       });
     },
     onEnterBack: () => {
       gsap.to(".intro-box p", {
         opacity: 1,
+        transform: "translateY(0)",
       });
     },
   },
@@ -92,29 +94,6 @@ function showListBox02() {
 function showListBox03() {
   gsap.to(".list-box03", { opacity: 1, y: 0 });
 }
-
-// project
-gsap.timeline({
-  scrollTrigger: {
-    trigger: ".project",
-    start: "top top",
-    end: "bottom center",
-    pin: true,
-    scrub: 1,
-    onEnter: () => {
-      gsap.to(".tag", {
-        y: -30,
-        opacity: 1,
-      });
-    },
-    onEnterBack: () => {
-      gsap.to(".tag", {
-        y: -30,
-        opacity: 1,
-      });
-    },
-  },
-});
 
 // Swiper 초기화
 const swiper = new Swiper(".mySwiper", {
