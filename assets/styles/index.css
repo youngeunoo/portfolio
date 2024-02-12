@@ -211,7 +211,7 @@ a:visited {
 
 /* skill */
 .skill {
-  padding: 100px 24%;
+  padding: 100px 0;
   position: relative;
 }
 .skill h2 {
@@ -235,28 +235,26 @@ a:visited {
   min-width: 800px;
   height: auto;
   position: relative;
+  display: grid;
+  place-items: center;
+}
+.skill .list-box {
+  position: absolute;
+  width: auto;
+  top: 10%;
 }
 .skill .list-box02 {
   opacity: 0;
-  top: 0;
-  position: absolute;
-  transform: translateY(0);
 }
 .skill .list-box03 {
   opacity: 0;
-  top: 13%;
-  position: absolute;
-  transform: translateY(-50%);
-  width: 100%;
 }
-
 .skill .list-box li {
   display: flex;
   align-items: center;
   flex: 0 0 100%;
   line-height: 1.7;
 }
-
 .skill .list-box li h3 {
   width: 220px;
   height: 200px;
@@ -366,6 +364,9 @@ a:visited {
   z-index: 500;
   transition: 0.3s;
   filter: grayscale(1);
+  @media (width<=1700px) {
+    width: 80%;
+  }
 }
 .project .swiper-slide:hover img {
   filter: inherit;
@@ -431,10 +432,10 @@ a:visited {
   filter: contrast(0%);
 }
 .swiper-button-next {
-  right: 350px;
+  right: 20%;
 }
 .swiper-button-prev {
-  left: 350px;
+  left: 20%;
 }
 
 /* outro */
